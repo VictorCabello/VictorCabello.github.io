@@ -3,9 +3,4 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I am Victor Cabello, I love to learn new programing languages, technologies and tools, however, I don't have a great memory so when I learn something new most of the time I forgot something that learned a month ago, therefore, I decide to write a blog with all my experiments, notes and ideas.
