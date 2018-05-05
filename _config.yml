@@ -1,2 +1,10 @@
 theme: jekyll-theme-merlot
 title: Como publicar codigo estatico en github
+
+# List of links in the navigation bar
+navbar-links:
+  Acerca de mi: "aboutme"
+  Resources:
+    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+    - Learn markdown: "http://www.markdowntutorial.com/"
+    - GitHub Pages: "https://pages.github.com/"
