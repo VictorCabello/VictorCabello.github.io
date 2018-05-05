@@ -29,5 +29,5 @@ links:
       url: /tags
       key_trigger: 3
     - title: about me
-      url: /aboutme
+      url: /about
       key_trigger: 4
