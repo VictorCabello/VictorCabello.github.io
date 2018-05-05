@@ -2,15 +2,15 @@ remote_theme: victorvoid/space-jekyll-template
 
 title: Como publicar codigo estatico en github
 
-# List of links in the navigation bar
-navbar-links:
-  Acerca de mi: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
+# Site settings
+description: Probar Pages
 
-
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
+# User settings
+username: VictorCabello
+user_description: DevOps Consultant
+user_title: Victor Cabello
+email: vmeca87@gmail.com
+twitter_username: VictorCabello
+github_username:  VictorCabello
+gplus_username:  VictorCabello
+disqus_username: VictorCabello
