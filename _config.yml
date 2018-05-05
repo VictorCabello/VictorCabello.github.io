@@ -25,12 +25,9 @@ links:
     - title: my posts
       url: /posts
       key_trigger: 2
-    - title: series
-      url: /series
-      key_trigger: 3
     - title: tags
       url: /tags
-      key_trigger: 4
+      key_trigger: 3
     - title: about me
-      url: /about
-      key_trigger: 5
+      url: /aboutme
+      key_trigger: 4
