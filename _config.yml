@@ -15,3 +15,22 @@ github_username:  VictorCabello
 gplus_username:  VictorCabello
 disqus_username: VictorCabello
 profile_picture: http://victorcabello.github.io/img/mifoto.jpg
+
+
+links:
+  section_1: # you can use any name
+    - title: home # show on menu
+      url: / #link
+      key_trigger: 1 # link shortcut and show on the left of the title
+    - title: my posts
+      url: /posts
+      key_trigger: 2
+    - title: series
+      url: /series
+      key_trigger: 3
+    - title: tags
+      url: /tags
+      key_trigger: 4
+    - title: about me
+      url: /about
+      key_trigger: 5
