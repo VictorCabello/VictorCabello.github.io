@@ -5,7 +5,7 @@ copyCodeButtons.forEach((copyCodeButton, index) => {
   const code = codeBlocks[index].innerText;
 
   copyCodeButton.addEventListener('click', () => {
-    window.navigator.writeText(code);
+    window.navigator.clipboard.writeText(code);
     copyCodeButton.classList.add('copied');
 
     setTimeout(() => {
