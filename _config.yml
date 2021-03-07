@@ -1,7 +1,7 @@
-title: Como publicar codigo estatico en github
+title: Blog Victor Cabello
 
 # Site settings
-description: Probar Pages
+description: Un lugar para compartir ideas
 
 # User settings
 username: VictorCabello
@@ -14,23 +14,8 @@ disqus_username: victorcabello
 gplus_username:  VictorCabello
 profile_picture: http://victorcabello.github.io/img/mifoto.jpg
 
+# Build settings
+theme: minima
 
-links:
-  section_1: # you can use any name
-    - title: home # show on menu
-      url: / #link
-      key_trigger: 1 # link shortcut and show on the left of the title
-    - title: my posts
-      url: /posts
-      key_trigger: 2
-    - title: tags
-      url: /tags
-      key_trigger: 3
-    - title: about me
-      url: /about
-      key_trigger: 4
-
-plugins:
-  - jekyll-remote-theme
-
-remote_theme: victorvoid/space-jekyll-template
+sass:
+    sass_dir: _sass

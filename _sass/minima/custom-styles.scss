@@ -1,16 +1,10 @@
----
-layout: compress
----
-
-<!DOCTYPE html>
-<html lang="pt-br">
-    {% include head.html %}
-    <body>
-        <style>
-
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 .code-header {
   display: flex;
   justify-content: flex-end;
+  background: black;
+  ;
 }
 
 .copy-code-button {
@@ -43,14 +37,5 @@ layout: compress
     }
   }
 }
-        </style>
-        <div class="page_posts">
-        {% include svg-icons.html %}
-        {% include header-post.html %}
-        {% include tree-posts.html %}
-        </div>
-        {% include scripts.html %}
 
-        <script src="/assets/scripts/copyCode.js"></script>
-    </body>
-</html>
+
