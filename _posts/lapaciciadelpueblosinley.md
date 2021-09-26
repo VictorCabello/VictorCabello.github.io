@@ -1,4 +1,18 @@
-# La paciencia del pueblo sin ley
+---
+layout: post
+title: "La paciencia del pueblo sin ley"
+date: 2021-09-26 01:00:00
+image: ''
+tags:
+- programa educativo
+- scout
+- reme
+- juego
+- corporalidad
+- sociabilidad
+categories:
+- tag
+---
 
 ## Inspiración
 
