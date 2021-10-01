@@ -2,7 +2,7 @@
 layout: post
 title: "La paciencia del pueblo sin ley"
 date: 2021-09-26 01:00:00
-image: ''
+image: '/img/calamar_mexicano.jpg'
 tags:
 - programa educativo
 - scout
@@ -28,7 +28,7 @@ El juego consiste en que a cada jugador se le entrega una placa de azúcar cosid
 
 Unos días después vi un meme de la versión Mexicana del juego que sería sacar un mazapán sin romperlo y determine que eso es para la manada.
 
-![Meme del juego en versión Mexicana](img/calamar_mexicano.jpg)
+![Meme del juego en versión Mexicana]({{ page.image | relative_url }})
 ## Instrucciones del juego
 
 A cada lobo se le dará un mazapán, cada lobo con mucho cuidado tratará de sacar el dulce de su envoltura sin romperlo desmostandole al pueblo sin ley que con paciencia, cuidado y atención a los detalles podemos lograr grandes cosas.
