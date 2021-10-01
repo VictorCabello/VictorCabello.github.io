@@ -28,10 +28,7 @@ El juego consiste en que a cada jugador se le entrega una placa de azúcar cosid
 
 Unos días después vi un meme de la versión Mexicana del juego que sería sacar un mazapán sin romperlo y determine que eso es para la manada.
 
-
-
-[Meme del juego en versión Mexicana](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.infobae.com%2Fnew-resizer%2FP-vlq1Zj-pMHMsxhmCNMYh6Q6l8%3D%2F1200x900%2Ffilters%3Aformat(jpg)%3Aquality(85)%2F%2Fcloudfront-us-east-1.images.arcpublishing.com%2Finfobae%2FVTYM4SVT7FG3XCUSKIT2UBLEUM.jpg&imgrefurl=https%3A%2F%2Fwww.infobae.com%2Famerica%2Fentretenimiento%2F2021%2F09%2F25%2Fsi-el-juego-del-calamar-fuera-mexicano-internautas-compartieron-memes-de-la-nueva-serie-coreana%2F&tbnid=ZwhKM0PbSm4ljM&vet=1&docid=2faphgBJIixTFM&w=1200&h=900&hl=es-US&source=sh%2Fx%2Fim)
-
+![Meme del juego en versión Mexicana](img/calamar_mexicano.jpg)
 ## Instrucciones del juego
 
 A cada lobo se le dará un mazapán, cada lobo con mucho cuidado tratará de sacar el dulce de su envoltura sin romperlo desmostandole al pueblo sin ley que con paciencia, cuidado y atención a los detalles podemos lograr grandes cosas.
