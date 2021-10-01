@@ -43,6 +43,6 @@ En este juego ay que persuadir al lobo de no actuar como un Banderlog y tratar d
 
 ## Áreas de crecimiento
 
-* Carácter
+* Corporalidad
 * Sociabilidad
 
