@@ -11,3 +11,5 @@ gem "jekyll", "~> 4.2"
 gem "jekyll-remote-theme", "~> 0.4.2"
 
 gem "minima", "~> 2.5"
+
+gem "jekyll-theme-tactile"
