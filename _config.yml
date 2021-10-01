@@ -15,7 +15,7 @@ gplus_username:  VictorCabello
 profile_picture: http://victorcabello.github.io/img/mifoto.jpg
 
 # Build settings
-theme: minima
+theme: jekyll-theme-time-machine
 
 sass:
     sass_dir: _sass
