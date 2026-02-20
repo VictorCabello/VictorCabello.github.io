@@ -6,15 +6,17 @@
   <title>Victor Cabello — Enterprise Architect | DevOps | Cloud | GenAI</title>
 
   <!-- SEO Meta -->
-  <meta name="description" content="Victor Cabello — Enterprise Architect y Technical Lead con 17+ años de experiencia en DevOps, Cloud Architecture, AWS y Generative AI/MLOps.">
+  <meta name="description" content="Victor Cabello — Enterprise Architect and Technical Lead with 17+ years of experience in DevOps, Cloud Architecture, AWS, and Generative AI/MLOps.">
   <meta name="keywords" content="Victor Cabello, Enterprise Architect, DevOps, Cloud, AWS, Azure, GCP, GenAI, MLOps, LangChain, Terraform, TOGAF">
   <meta name="author" content="Victor Cabello">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://victorcabello.github.io">
+  <link rel="alternate" hreflang="es" href="https://victorcabello.github.io">
+  <link rel="alternate" hreflang="en" href="https://victorcabello.github.io">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Victor Cabello — Enterprise Architect | DevOps | Cloud | GenAI">
-  <meta property="og:description" content="Enterprise Architect y Technical Lead con 17+ años de experiencia en DevOps, Cloud y AI/ML.">
+  <meta property="og:description" content="Enterprise Architect and Technical Lead with 17+ years of experience in DevOps, Cloud and AI/ML.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://victorcabello.github.io">
   <meta property="og:image" content="https://victorcabello.github.io/img/mifoto.jpg">
@@ -22,7 +24,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Victor Cabello — Enterprise Architect | DevOps | Cloud | GenAI">
-  <meta name="twitter:description" content="Enterprise Architect y Technical Lead con 17+ años de experiencia en DevOps, Cloud y AI/ML.">
+  <meta name="twitter:description" content="Enterprise Architect and Technical Lead with 17+ years of experience in DevOps, Cloud and AI/ML.">
   <meta name="twitter:image" content="https://victorcabello.github.io/img/mifoto.jpg">
 
   <!-- JSON-LD Structured Data -->
@@ -67,6 +69,9 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
+
+  <!-- i18n (load early to prevent flash of wrong language) -->
+  <script src="assets/scripts/i18n.js"></script>
 </head>
 
 <body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 font-sans leading-relaxed">
@@ -77,21 +82,24 @@
       <a href="#hero" class="text-lg font-bold text-primary-600 dark:text-primary-400">VC</a>
       <div class="flex items-center gap-4">
         <div class="hidden sm:flex gap-4 text-sm">
-          <a href="#about" class="hover:text-primary-500 transition-colors">Resumen</a>
-          <a href="#expertise" class="hover:text-primary-500 transition-colors">Expertise</a>
-          <a href="#experience" class="hover:text-primary-500 transition-colors">Experiencia</a>
+          <a href="#about" class="hover:text-primary-500 transition-colors" data-i18n="nav.about">Resumen</a>
+          <a href="#expertise" class="hover:text-primary-500 transition-colors" data-i18n="nav.expertise">Expertise</a>
+          <a href="#experience" class="hover:text-primary-500 transition-colors" data-i18n="nav.experience">Experiencia</a>
           <a href="#ai-ml" class="hover:text-primary-500 transition-colors">AI/ML</a>
           <a href="#skills" class="hover:text-primary-500 transition-colors">Skills</a>
-          <a href="#certifications" class="hover:text-primary-500 transition-colors">Certificaciones</a>
-          <a href="#projects" class="hover:text-primary-500 transition-colors">Proyectos</a>
-          <a href="#contact" class="hover:text-primary-500 transition-colors">Contacto</a>
+          <a href="#certifications" class="hover:text-primary-500 transition-colors" data-i18n="nav.certifications">Certificaciones</a>
+          <a href="#projects" class="hover:text-primary-500 transition-colors" data-i18n="nav.projects">Proyectos</a>
+          <a href="#contact" class="hover:text-primary-500 transition-colors" data-i18n="nav.contact">Contacto</a>
+        </div>
+        <!-- Language toggle -->
+        <div class="flex items-center rounded-lg border border-slate-300 dark:border-slate-600 overflow-hidden text-xs font-medium">
+          <button id="lang-es" class="px-2.5 py-1.5 transition-colors bg-primary-500 text-white" aria-label="Cambiar a español">ES</button>
+          <button id="lang-en" class="px-2.5 py-1.5 transition-colors text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700" aria-label="Switch to English">EN</button>
         </div>
         <button id="theme-toggle" aria-label="Switch to light mode" class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-          <!-- Sun icon (shown in dark mode) -->
           <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
           </svg>
-          <!-- Moon icon (shown in light mode) -->
           <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
           </svg>
@@ -111,17 +119,17 @@
         <h1 class="hero-fade delay-text text-4xl md:text-6xl font-bold mb-4">
           Victor <span class="text-primary-500">Cabello</span>
         </h1>
-        <p class="hero-fade delay-text text-xl md:text-2xl text-slate-500 dark:text-slate-400 mb-6">
+        <p class="hero-fade delay-text text-xl md:text-2xl text-slate-500 dark:text-slate-400 mb-6" data-i18n="hero.subtitle">
           Enterprise Architect · DevOps · Cloud · GenAI
         </p>
         <div class="hero-fade delay-tagline inline-block">
-          <p class="typewriter text-lg md:text-xl text-accent-500 font-mono">
+          <p class="typewriter text-lg md:text-xl text-accent-500 font-mono" data-i18n="hero.tagline">
             Transformando infraestructura en ventaja competitiva con IA
           </p>
         </div>
         <div class="hero-fade delay-tagline mt-10 flex justify-center gap-4">
-          <a href="#contact" class="px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-medium transition-colors">Contacto</a>
-          <a href="#experience" class="px-6 py-3 border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white rounded-lg font-medium transition-colors">Ver experiencia</a>
+          <a href="#contact" class="px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-medium transition-colors" data-i18n="hero.cta_contact">Contacto</a>
+          <a href="#experience" class="px-6 py-3 border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white rounded-lg font-medium transition-colors" data-i18n="hero.cta_experience">Ver experiencia</a>
         </div>
       </div>
     </section>
@@ -129,8 +137,8 @@
     <!-- ===== RESUMEN PROFESIONAL ===== -->
     <section id="about" class="py-20 px-4">
       <div class="max-w-4xl mx-auto animate-on-scroll">
-        <h2 class="text-3xl font-bold mb-8 text-center">Resumen Profesional</h2>
-        <p class="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
+        <h2 class="text-3xl font-bold mb-8 text-center" data-i18n="about.title">Resumen Profesional</h2>
+        <p class="text-lg leading-relaxed text-slate-600 dark:text-slate-300" data-i18n="about.text" data-i18n-html>
           Enterprise Architect y Technical Lead con <strong>más de 17 años de experiencia</strong> diseñando e implementando soluciones de infraestructura, automatización y arquitectura cloud a escala empresarial. Especializado en
           <span class="text-primary-500 font-semibold">DevOps</span>,
           <span class="text-primary-500 font-semibold">Cloud (AWS, Azure, GCP)</span> y
@@ -143,7 +151,7 @@
     <!-- ===== ÁREAS DE EXPERTISE ===== -->
     <section id="expertise" class="py-20 px-4 bg-slate-50 dark:bg-slate-800/50">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center animate-on-scroll">Áreas de Expertise</h2>
+        <h2 class="text-3xl font-bold mb-12 text-center animate-on-scroll" data-i18n="expertise.title">Áreas de Expertise</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
           <div class="scale-up delay-100 bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md card-hover text-center">
@@ -151,7 +159,7 @@
               <svg class="w-8 h-8 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7c-2 0-3 1-3 3zm5 2h6m-6 4h6"/></svg>
             </div>
             <h3 class="text-lg font-semibold mb-2">DevOps</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">CI/CD, IaC, Containerización, GitOps, SRE</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="expertise.devops_desc">CI/CD, IaC, Containerización, GitOps, SRE</p>
           </div>
 
           <div class="scale-up delay-200 bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md card-hover text-center">
@@ -159,7 +167,7 @@
               <svg class="w-8 h-8 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
             </div>
             <h3 class="text-lg font-semibold mb-2">Cloud Architecture</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">AWS, Azure, GCP, Multi-cloud, Serverless</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="expertise.cloud_desc">AWS, Azure, GCP, Multi-cloud, Serverless</p>
           </div>
 
           <div class="scale-up delay-300 bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md card-hover text-center">
@@ -174,8 +182,8 @@
             <div class="w-14 h-14 mx-auto mb-4 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center">
               <svg class="w-8 h-8 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
             </div>
-            <h3 class="text-lg font-semibold mb-2">Enterprise Architecture</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">TOGAF, Microservices, API Design, System Design</p>
+            <h3 class="text-lg font-semibold mb-2" data-i18n="expertise.arch_title">Enterprise Architecture</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="expertise.arch_desc">TOGAF, Microservices, API Design, System Design</p>
           </div>
 
         </div>
@@ -185,24 +193,23 @@
     <!-- ===== EXPERIENCIA PROFESIONAL ===== -->
     <section id="experience" class="py-20 px-4">
       <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center animate-on-scroll">Experiencia Profesional</h2>
+        <h2 class="text-3xl font-bold mb-12 text-center animate-on-scroll" data-i18n="experience.title">Experiencia Profesional</h2>
 
         <div class="relative">
-          <!-- Timeline line -->
           <div class="timeline-line bg-primary-200 dark:bg-primary-800 hidden md:block"></div>
 
           <!-- Item 1 -->
           <div class="mb-12 md:flex md:items-start">
             <div class="slide-in-left md:w-1/2 md:pr-12 md:text-right">
               <div class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md">
-                <span class="text-sm text-primary-500 font-mono">2022 – Presente</span>
+                <span class="text-sm text-primary-500 font-mono" data-i18n="exp1.date">2022 – Presente</span>
                 <h3 class="text-xl font-bold mt-1">Enterprise Architect / Technical Lead</h3>
-                <p class="text-slate-500 dark:text-slate-400 text-sm mb-2">Empresa de Tecnología</p>
+                <p class="text-slate-500 dark:text-slate-400 text-sm mb-2" data-i18n="exp1.company">Empresa de Tecnología</p>
                 <ul class="text-sm text-slate-600 dark:text-slate-300 space-y-1 list-disc list-inside md:list-outside md:text-right">
-                  <li>Liderazgo de arquitectura cloud multi-account en AWS</li>
-                  <li>Diseño e implementación de pipelines CI/CD enterprise</li>
-                  <li>Adopción de GenAI y MLOps en flujos productivos</li>
-                  <li>Mentoría a equipos de DevOps y desarrollo</li>
+                  <li data-i18n="exp1.b1">Liderazgo de arquitectura cloud multi-account en AWS</li>
+                  <li data-i18n="exp1.b2">Diseño e implementación de pipelines CI/CD enterprise</li>
+                  <li data-i18n="exp1.b3">Adopción de GenAI y MLOps en flujos productivos</li>
+                  <li data-i18n="exp1.b4">Mentoría a equipos de DevOps y desarrollo</li>
                 </ul>
               </div>
             </div>
@@ -216,12 +223,12 @@
               <div class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md">
                 <span class="text-sm text-primary-500 font-mono">2018 – 2022</span>
                 <h3 class="text-xl font-bold mt-1">Senior DevOps Engineer / Cloud Architect</h3>
-                <p class="text-slate-500 dark:text-slate-400 text-sm mb-2">Consultoría Cloud</p>
+                <p class="text-slate-500 dark:text-slate-400 text-sm mb-2" data-i18n="exp2.company">Consultoría Cloud</p>
                 <ul class="text-sm text-slate-600 dark:text-slate-300 space-y-1 list-disc list-inside">
-                  <li>Migración de cargas de trabajo on-premise a AWS y Azure</li>
-                  <li>Implementación de Infrastructure as Code con Terraform</li>
-                  <li>Orquestación de contenedores con Kubernetes y ECS</li>
-                  <li>Automatización de procesos con Ansible y CloudFormation</li>
+                  <li data-i18n="exp2.b1">Migración de cargas de trabajo on-premise a AWS y Azure</li>
+                  <li data-i18n="exp2.b2">Implementación de Infrastructure as Code con Terraform</li>
+                  <li data-i18n="exp2.b3">Orquestación de contenedores con Kubernetes y ECS</li>
+                  <li data-i18n="exp2.b4">Automatización de procesos con Ansible y CloudFormation</li>
                 </ul>
               </div>
             </div>
@@ -233,12 +240,12 @@
               <div class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md">
                 <span class="text-sm text-primary-500 font-mono">2014 – 2018</span>
                 <h3 class="text-xl font-bold mt-1">DevOps Engineer</h3>
-                <p class="text-slate-500 dark:text-slate-400 text-sm mb-2">Empresa de Software</p>
+                <p class="text-slate-500 dark:text-slate-400 text-sm mb-2" data-i18n="exp3.company">Empresa de Software</p>
                 <ul class="text-sm text-slate-600 dark:text-slate-300 space-y-1 list-disc list-inside md:list-outside md:text-right">
-                  <li>Implementación de pipelines CI/CD con Jenkins y GitLab</li>
-                  <li>Containerización de aplicaciones con Docker</li>
-                  <li>Monitoreo y observabilidad con ELK Stack y Prometheus</li>
-                  <li>Gestión de configuración con Chef y Puppet</li>
+                  <li data-i18n="exp3.b1">Implementación de pipelines CI/CD con Jenkins y GitLab</li>
+                  <li data-i18n="exp3.b2">Containerización de aplicaciones con Docker</li>
+                  <li data-i18n="exp3.b3">Monitoreo y observabilidad con ELK Stack y Prometheus</li>
+                  <li data-i18n="exp3.b4">Gestión de configuración con Chef y Puppet</li>
                 </ul>
               </div>
             </div>
@@ -251,13 +258,13 @@
             <div class="slide-in-right md:w-1/2 md:pl-12">
               <div class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md">
                 <span class="text-sm text-primary-500 font-mono">2008 – 2014</span>
-                <h3 class="text-xl font-bold mt-1">Systems Administrator / Infrastructure Engineer</h3>
-                <p class="text-slate-500 dark:text-slate-400 text-sm mb-2">Sector Empresarial</p>
+                <h3 class="text-xl font-bold mt-1" data-i18n="exp4.title">Systems Administrator / Infrastructure Engineer</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm mb-2" data-i18n="exp4.company">Sector Empresarial</p>
                 <ul class="text-sm text-slate-600 dark:text-slate-300 space-y-1 list-disc list-inside">
-                  <li>Administración de servidores Linux y Windows</li>
-                  <li>Virtualización con VMware y KVM</li>
-                  <li>Networking, firewalls y seguridad perimetral</li>
-                  <li>Scripting con Bash y Python para automatización</li>
+                  <li data-i18n="exp4.b1">Administración de servidores Linux y Windows</li>
+                  <li data-i18n="exp4.b2">Virtualización con VMware y KVM</li>
+                  <li data-i18n="exp4.b3">Networking, firewalls y seguridad perimetral</li>
+                  <li data-i18n="exp4.b4">Scripting con Bash y Python para automatización</li>
                 </ul>
               </div>
             </div>
@@ -270,8 +277,8 @@
     <!-- ===== AI & MACHINE LEARNING ===== -->
     <section id="ai-ml" class="py-20 px-4 bg-gradient-to-br from-slate-50 to-primary-50 dark:from-slate-800/50 dark:to-primary-900/20">
       <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-4 text-center animate-on-scroll">AI & Machine Learning Journey</h2>
-        <p class="text-center text-slate-500 dark:text-slate-400 mb-12 animate-on-scroll">
+        <h2 class="text-3xl font-bold mb-4 text-center animate-on-scroll" data-i18n="aiml.title">AI & Machine Learning Journey</h2>
+        <p class="text-center text-slate-500 dark:text-slate-400 mb-12 animate-on-scroll" data-i18n="aiml.subtitle">
           Transición natural desde DevOps/Cloud hacia MLOps e IA Generativa
         </p>
 
@@ -279,32 +286,32 @@
 
           <div class="animate-on-scroll delay-100 bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md card-hover">
             <div class="text-accent-500 text-2xl mb-3">&#x1f3c5;</div>
-            <h3 class="font-bold text-lg mb-2">Certificación AWS ML</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">AWS Certified Machine Learning – Specialty. Validación de conocimientos en ML pipelines, feature engineering y deployment.</p>
+            <h3 class="font-bold text-lg mb-2" data-i18n="aiml.cert_title">Certificación AWS ML</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="aiml.cert_desc">AWS Certified Machine Learning – Specialty. Validación de conocimientos en ML pipelines, feature engineering y deployment.</p>
           </div>
 
           <div class="animate-on-scroll delay-200 bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md card-hover">
             <div class="text-accent-500 text-2xl mb-3">&#x2699;</div>
             <h3 class="font-bold text-lg mb-2">MLOps</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">Programa de aprendizaje estructurado (12 semanas) para la transición DevOps → MLOps. Cubriendo pipelines de datos, model serving y monitoring.</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="aiml.mlops_desc">Programa de aprendizaje estructurado (12 semanas) para la transición DevOps → MLOps. Cubriendo pipelines de datos, model serving y monitoring.</p>
           </div>
 
           <div class="animate-on-scroll delay-300 bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md card-hover">
             <div class="text-accent-500 text-2xl mb-3">&#x1f517;</div>
             <h3 class="font-bold text-lg mb-2">RAG & LangChain</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">Desarrollo de pipelines de ingesta vectorial con LangChain, Qdrant y Ollama. Chatbot con Retrieval-Augmented Generation.</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="aiml.rag_desc">Desarrollo de pipelines de ingesta vectorial con LangChain, Qdrant y Ollama. Chatbot con Retrieval-Augmented Generation.</p>
           </div>
 
           <div class="animate-on-scroll delay-400 bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md card-hover">
             <div class="text-accent-500 text-2xl mb-3">&#x1f916;</div>
             <h3 class="font-bold text-lg mb-2">LLM Tooling</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">Herramientas CLI con LangGraph + Ollama para generación automatizada de commits con IA.</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="aiml.llm_desc">Herramientas CLI con LangGraph + Ollama para generación automatizada de commits con IA.</p>
           </div>
 
           <div class="animate-on-scroll delay-500 bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md card-hover">
             <div class="text-accent-500 text-2xl mb-3">&#x1f9ea;</div>
-            <h3 class="font-bold text-lg mb-2">ML Aplicado</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">Predicción de propiedades moleculares con Graph Convolutional Networks usando PyTorch y DGL.</p>
+            <h3 class="font-bold text-lg mb-2" data-i18n="aiml.applied_title">ML Aplicado</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="aiml.applied_desc">Predicción de propiedades moleculares con Graph Convolutional Networks usando PyTorch y DGL.</p>
           </div>
 
           <div class="animate-on-scroll delay-600 bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md card-hover">
@@ -320,11 +327,10 @@
     <!-- ===== HABILIDADES TÉCNICAS ===== -->
     <section id="skills" class="py-20 px-4">
       <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center animate-on-scroll">Habilidades Técnicas</h2>
+        <h2 class="text-3xl font-bold mb-12 text-center animate-on-scroll" data-i18n="skills.title">Habilidades Técnicas</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-          <!-- Cloud & Infrastructure -->
           <div class="animate-on-scroll delay-100">
             <h3 class="font-semibold text-lg mb-4 text-primary-500">Cloud & Infrastructure</h3>
             <div class="flex flex-wrap gap-2">
@@ -339,7 +345,6 @@
             </div>
           </div>
 
-          <!-- DevOps & CI/CD -->
           <div class="animate-on-scroll delay-200">
             <h3 class="font-semibold text-lg mb-4 text-primary-500">DevOps & CI/CD</h3>
             <div class="flex flex-wrap gap-2">
@@ -354,7 +359,6 @@
             </div>
           </div>
 
-          <!-- AI / ML -->
           <div class="animate-on-scroll delay-300">
             <h3 class="font-semibold text-lg mb-4 text-accent-500">AI / Machine Learning</h3>
             <div class="flex flex-wrap gap-2">
@@ -369,9 +373,8 @@
             </div>
           </div>
 
-          <!-- Programming & Tools -->
           <div class="animate-on-scroll delay-400">
-            <h3 class="font-semibold text-lg mb-4 text-primary-500">Lenguajes & Herramientas</h3>
+            <h3 class="font-semibold text-lg mb-4 text-primary-500" data-i18n="skills.lang_title">Lenguajes & Herramientas</h3>
             <div class="flex flex-wrap gap-2">
               <span class="pop-in delay-100 px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">Python</span>
               <span class="pop-in delay-200 px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">Bash</span>
@@ -391,7 +394,7 @@
     <!-- ===== CERTIFICACIONES ===== -->
     <section id="certifications" class="py-20 px-4 bg-slate-50 dark:bg-slate-800/50">
       <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center animate-on-scroll">Certificaciones</h2>
+        <h2 class="text-3xl font-bold mb-12 text-center animate-on-scroll" data-i18n="certs.title">Certificaciones</h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
@@ -438,7 +441,7 @@
     <!-- ===== PROYECTOS DESTACADOS ===== -->
     <section id="projects" class="py-20 px-4">
       <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center animate-on-scroll">Proyectos Destacados</h2>
+        <h2 class="text-3xl font-bold mb-12 text-center animate-on-scroll" data-i18n="projects.title">Proyectos Destacados</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
@@ -448,7 +451,7 @@
               <span class="px-2 py-0.5 bg-primary-100 dark:bg-primary-900/30 text-primary-500 rounded text-xs font-mono">RAG</span>
             </div>
             <h3 class="font-bold text-lg mb-2 group-hover:text-primary-500 transition-colors">El Libro de la Selva</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">Pipeline RAG con LangChain + Qdrant + Ollama. Ingesta vectorial de documentos y chatbot conversacional.</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="proj.selva_desc">Pipeline RAG con LangChain + Qdrant + Ollama. Ingesta vectorial de documentos y chatbot conversacional.</p>
             <p class="text-xs text-slate-400 mt-3 font-mono">Python · LangChain · Qdrant · Ollama</p>
           </a>
 
@@ -458,7 +461,7 @@
               <span class="px-2 py-0.5 bg-primary-100 dark:bg-primary-900/30 text-primary-500 rounded text-xs font-mono">CLI</span>
             </div>
             <h3 class="font-bold text-lg mb-2 group-hover:text-primary-500 transition-colors">Commiter</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">Generador de mensajes de commit con IA usando LangGraph + Ollama. Herramienta CLI en Python.</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="proj.commiter_desc">Generador de mensajes de commit con IA usando LangGraph + Ollama. Herramienta CLI en Python.</p>
             <p class="text-xs text-slate-400 mt-3 font-mono">Python · LangGraph · Ollama</p>
           </a>
 
@@ -467,8 +470,8 @@
               <span class="px-2 py-0.5 bg-accent-500/10 text-accent-500 rounded text-xs font-mono">ML</span>
               <span class="px-2 py-0.5 bg-primary-100 dark:bg-primary-900/30 text-primary-500 rounded text-xs font-mono">GCN</span>
             </div>
-            <h3 class="font-bold text-lg mb-2 group-hover:text-primary-500 transition-colors">Predicción de Solubilidad Molecular</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">ML con Graph Convolutional Networks para predecir propiedades de moléculas usando PyTorch/DGL.</p>
+            <h3 class="font-bold text-lg mb-2 group-hover:text-primary-500 transition-colors" data-i18n="proj.mol_title">Predicción de Solubilidad Molecular</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="proj.mol_desc">ML con Graph Convolutional Networks para predecir propiedades de moléculas usando PyTorch/DGL.</p>
             <p class="text-xs text-slate-400 mt-3 font-mono">Python · PyTorch · DGL</p>
           </a>
 
@@ -478,7 +481,7 @@
               <span class="px-2 py-0.5 bg-primary-100 dark:bg-primary-900/30 text-primary-500 rounded text-xs font-mono">Training</span>
             </div>
             <h3 class="font-bold text-lg mb-2 group-hover:text-primary-500 transition-colors">MLOps Training</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">Syllabus completo de 12 semanas para transición DevOps → MLOps. Pipelines, model serving, monitoring.</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="proj.mlops_desc">Syllabus completo de 12 semanas para transición DevOps → MLOps. Pipelines, model serving, monitoring.</p>
             <p class="text-xs text-slate-400 mt-3 font-mono">Python · MLOps · DevOps</p>
           </a>
 
@@ -488,7 +491,7 @@
               <span class="px-2 py-0.5 bg-primary-100 dark:bg-primary-900/30 text-primary-500 rounded text-xs font-mono">OSS</span>
             </div>
             <h3 class="font-bold text-lg mb-2 group-hover:text-primary-500 transition-colors">PyStandalone HTML</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">Herramienta Python open-source para empaquetar HTML con assets en base64 como archivo standalone.</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="proj.pyhtml_desc">Herramienta Python open-source para empaquetar HTML con assets en base64 como archivo standalone.</p>
             <p class="text-xs text-slate-400 mt-3 font-mono">Python · HTML · Base64</p>
           </a>
 
@@ -498,7 +501,7 @@
               <span class="px-2 py-0.5 bg-primary-100 dark:bg-primary-900/30 text-primary-500 rounded text-xs font-mono">Hackathon</span>
             </div>
             <h3 class="font-bold text-lg mb-2 group-hover:text-primary-500 transition-colors">DevOps Hackathon</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">Proyecto de hackathon DevOps demostrando mejores prácticas de CI/CD, containerización y automatización.</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400" data-i18n="proj.hackathon_desc">Proyecto de hackathon DevOps demostrando mejores prácticas de CI/CD, containerización y automatización.</p>
             <p class="text-xs text-slate-400 mt-3 font-mono">DevOps · CI/CD · Docker</p>
           </a>
 
@@ -509,11 +512,11 @@
     <!-- ===== EDUCACIÓN ===== -->
     <section id="education" class="py-20 px-4 bg-slate-50 dark:bg-slate-800/50">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center animate-on-scroll">Educación</h2>
+        <h2 class="text-3xl font-bold mb-12 text-center animate-on-scroll" data-i18n="edu.title">Educación</h2>
 
         <div class="animate-on-scroll bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md max-w-lg mx-auto text-center">
           <div class="text-3xl mb-3">&#x1f393;</div>
-          <h3 class="font-bold text-lg">Ingeniería en Sistemas Computacionales</h3>
+          <h3 class="font-bold text-lg" data-i18n="edu.degree">Ingeniería en Sistemas Computacionales</h3>
           <p class="text-primary-500">Instituto Tecnológico de Saltillo</p>
           <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Coahuila, México</p>
         </div>
@@ -523,8 +526,8 @@
     <!-- ===== CONTACTO ===== -->
     <section id="contact" class="py-20 px-4">
       <div class="max-w-4xl mx-auto text-center animate-on-scroll">
-        <h2 class="text-3xl font-bold mb-8">Contacto</h2>
-        <p class="text-slate-500 dark:text-slate-400 mb-8 text-lg">
+        <h2 class="text-3xl font-bold mb-8" data-i18n="contact.title">Contacto</h2>
+        <p class="text-slate-500 dark:text-slate-400 mb-8 text-lg" data-i18n="contact.text">
           ¿Interesado en colaborar? ¡Hablemos!
         </p>
 
@@ -553,7 +556,7 @@
 
   <!-- ===== FOOTER ===== -->
   <footer class="py-8 px-4 border-t border-slate-200 dark:border-slate-700 text-center text-sm text-slate-500 dark:text-slate-400">
-    <p>&copy; 2026 Victor Cabello. Hecho con Tailwind CSS.</p>
+    <p data-i18n="footer.text">&copy; 2026 Victor Cabello. Hecho con Tailwind CSS.</p>
   </footer>
 
   <!-- Scripts -->
