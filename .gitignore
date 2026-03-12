@@ -2,3 +2,5 @@
 .idea
 *.log
 tmp/
+node_modules/
+assets/css/tailwind.input.css
